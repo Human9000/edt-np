@@ -56,27 +56,27 @@ def myedt3d(b):
     return distances ** 0.5, indices
 
 
-# 测试函数
-border_arr = np.array([
-    [[0, 0, 1, 0, 0],
-     [0, 0, 0, 0, 0],
-     [0, 1, 0, 0, 0],
-     [0, 0, 0, 1, 0],
-     [0, 0, 0, 0, 0]],
-    [[0, 0, 0, 0, 0],
-     [0, 0, 1, 0, 0],
-     [0, 0, 0, 0, 0],
-     [0, 1, 0, 0, 0],
-     [0, 0, 0, 0, 0]],
-    [[1, 0, 0, 0, 0],
-     [0, 0, 0, 0, 0],
-     [0, 0, 0, 0, 1],
-     [0, 0, 0, 0, 0],
-     [0, 0, 0, 0, 0]]
-], dtype=np.int32)
+# # 测试函数
+# border_arr = np.array([
+#     [[0, 0, 1, 0, 0],
+#      [0, 0, 0, 0, 0],
+#      [0, 1, 0, 0, 0],
+#      [0, 0, 0, 1, 0],
+#      [0, 0, 0, 0, 0]],
+#     [[0, 0, 0, 0, 0],
+#      [0, 0, 1, 0, 0],
+#      [0, 0, 0, 0, 0],
+#      [0, 1, 0, 0, 0],
+#      [0, 0, 0, 0, 0]],
+#     [[1, 0, 0, 0, 0],
+#      [0, 0, 0, 0, 0],
+#      [0, 0, 0, 0, 1],
+#      [0, 0, 0, 0, 0],
+#      [0, 0, 0, 0, 0]]
+# ], dtype=np.int32)
 
-distances, indices = myedt3d(border_arr)
+# distances, indices = myedt3d(border_arr)
 
-lp.print_stats()
+# lp.print_stats()
 # print("Distance Transform:\n", distances)
 # print("Nearest Coordinates:\n", indices)
